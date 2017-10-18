@@ -100,6 +100,6 @@ cd /root/
 curl -sL https://deb.nodesource.com/setup_6.x -o nodesource_setup.sh
 chmod +x nodesource_setup.sh
 ./nodesource_setup.sh
-apt-get install nodejs
+apt-get install nodejs -y
 npm i -g pm2
 npm i -g supervisor
