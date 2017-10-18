@@ -1,6 +1,6 @@
 #!/bin/bash
 nginx_version=1.13.6
-NPS_VERSION=1.12.34.3-stable
+NPS_VERSION=1.12.34.2-stable
 
 apt-get install git build-essential libpcre3 libpcre3-dev libssl-dev zlib1g-dev -y
 wget http://nginx.org/download/nginx-$nginx_version.tar.gz
