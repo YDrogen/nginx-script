@@ -2,7 +2,7 @@
 nginx_version=1.13.6
 NPS_VERSION=1.12.34.3-stable
 
-apt-get install git build-essential libpcre3 libpcre3-dev libssl-dev zlib1g-dev zip unzip -y
+apt-get install git build-essential libpcre3 libpcre3-dev libssl-dev zlib1g-dev zip unzip mysql-server -y
 wget http://nginx.org/download/nginx-$nginx_version.tar.gz
 wget https://github.com/pagespeed/ngx_pagespeed/archive/v${NPS_VERSION}.zip
 unzip v${NPS_VERSION}.zip
