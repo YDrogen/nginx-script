@@ -21,6 +21,12 @@ cd /root/
 tar -zxvf nginx-$nginx_version.tar.gz
 cd nginx-$nginx_version
 ./configure \
+	--prefix=/var/www \
+	--conf-path=/etc/nginx/nginx.conf \
+	--http-log-path=/var/log/nginx/access.log \
+	--error-log-path=/var/log/nginx/error.log \
+	--lock-path=/var/lock/nginx.lock \
+	--pid-path=/run/nginx.pid \
 	--with-http_ssl_module \
 	--with-http_stub_status_module \
 	--with-threads \
@@ -103,3 +109,4 @@ chmod +x nodesource_setup.sh
 apt-get install nodejs -y
 npm i -g pm2
 npm i -g supervisor
+
