@@ -1,6 +1,6 @@
 #!/bin/bash
 nginx_version=1.13.6
-NPS_VERSION=1.12.34.2-stable
+NPS_VERSION=1.12.34.3-stable
 
 apt-get install git build-essential libpcre3 libpcre3-dev libssl-dev zlib1g-dev zip unzip -y
 wget http://nginx.org/download/nginx-$nginx_version.tar.gz
@@ -24,7 +24,7 @@ cd nginx-$nginx_version
 	--with-http_ssl_module \
 	--with-http_stub_status_module \
 	--with-threads \
-	--add-module=/root/ngx_pagespeed-$NPS__VERSION \
+	--add-module=/root/ngx_pagespeed-$NPS_VERSION \
 	--add-module=/root/ngx_brotli \
 	--with-http_v2_module \
 	--with-http_gunzip_module \
